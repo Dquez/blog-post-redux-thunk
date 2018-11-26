@@ -8,9 +8,9 @@ class UserHeader extends Component {
         this.props.fetchUser(this.props.userId);
     }
     render(){
-
+        console.log(this.props.user);
         return(
-            <div>User: {this.props.user.name || ""}</div>
+            <div>User: {""}</div>
         )
     }
 }
