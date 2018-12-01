@@ -1,8 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-# streaming-app
-
-This application uses modern React-Redux design patterns to allow users to create, read, update and delete their streams.
+# blog-post-redux-thunk
+A simple react-redux blog posting application with redux thunk
 
 ## Built With
 
