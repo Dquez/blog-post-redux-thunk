@@ -6,6 +6,13 @@ export const fetchPostsAndUsers = () => async (dispatch, getState) => {
     const userIds = _.uniq(_.map(getState().posts, "userId"))
     // alternative to memoize, where we are creating one xhr request per unique id and dispatching the result to be added to our users array in the redux state
     userIds.forEach(id=> dispatch(fetchUser(id)))
+
+    // using the chain function as an alternative to condense the code above
+    // _.chain(getState().posts)
+    //  .map("userId")
+    //  .uniq()
+    //  .forEach(id=> dispatch(fetchUser(id)))
+    //  .value()
 }
 
 export const fetchPosts = () => async dispatch => {
